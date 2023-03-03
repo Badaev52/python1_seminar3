@@ -20,7 +20,8 @@ for i in range(n):
 
 print(list_1)
 
-x = int(input("Задайте число: "))
+x = random.randrange(0,10)
+print(x)
 
 col = 0
 for i in list_1:
@@ -28,3 +29,30 @@ for i in list_1:
         col += 1
 
 print(f"-> {col}")
+
+
+# Задача 18: Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. 
+# Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
+# В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
+
+# *Пример:*
+
+# 5
+#     1 2 3 4 5
+#     6
+#     -> 5
+
+print("\nЗадача 18")
+print(list_1)
+x = random.randrange(0,10)
+print(x)
+
+delta = 10
+num = list[0]
+for i in list_1:
+    temp = abs(i - x)    
+    if temp < delta:
+        delta = temp
+        num = i
+
+print(f"-> {num}")
